@@ -1,15 +1,15 @@
 name: Build & Deploy ecodash-api
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   push:
     branches:
       - main
-  - paths:
-    - 'apps/ecodash-api/**'
-    - '.github/workflows/build-and-deploy-ecodash-api.yaml'
-    
-permissions: 
+    paths:
+      - 'apps/ecodash-api/**'
+      - '.github/workflows/build-and-deploy-ecodash-api.yaml'
+
+permissions:
   contents: write
 
 jobs:
