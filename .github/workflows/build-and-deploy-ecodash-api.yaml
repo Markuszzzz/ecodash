@@ -2,6 +2,9 @@ name: Build & Deploy ecodash-api
 
 on:
   workflow_dispatch: 
+    
+permissions: 
+  contents: write
 
 jobs:
   build-and-deploy:
