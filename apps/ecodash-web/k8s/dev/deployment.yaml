@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecodash-web
+  labels:
+    app: ecodash-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecodash-web
+  template:
+    metadata:
+      labels:
+        app: ecodash-web
+    spec:
+      containers:
+        - name: ecodash-web
+          image: DOCKER_IMAGE_PLACEHOLDER
+          ports:
+            - containerPort: 80
