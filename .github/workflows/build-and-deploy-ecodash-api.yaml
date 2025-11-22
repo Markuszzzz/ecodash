@@ -6,8 +6,8 @@ on:
     branches:
       - main
   - paths:
-        - 'apps/ecodash-api/**'
-        - '.github/workflows/build-and-deploy-ecodash-api.yaml'
+    - 'apps/ecodash-api/**'
+    - '.github/workflows/build-and-deploy-ecodash-api.yaml'
     
 permissions: 
   contents: write
