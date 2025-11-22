@@ -1,17 +1,13 @@
-# Build stage
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Kopier csproj først og restore (bedre cache)
 COPY Ecodash.Api.csproj .
 RUN dotnet restore Ecodash.Api.csproj
 
-# Kopier resten av koden
 COPY . .
 RUN dotnet publish Ecodash.Api.csproj -c Release -o /app/publish
 
-# Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
 
 COPY --from=build /app/publish .
