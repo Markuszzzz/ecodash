@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: ecodash-api
-          image: DOCKER_IMAGE_PLACEHOLDER
+          image: docker.io/maldnuscarlsen/ecodash-api:506f31c7790f683a9698ebfc38aad4e4dc2127f4
           ports:
             - containerPort: 8080
