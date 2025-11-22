@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: ecodash-web
-          image: DOCKER_IMAGE_PLACEHOLDER
+          image: docker.io/maldnuscarlsen/ecodash-web:7052b0bcf95e2d2de738efe3ac0393d809825fad
           ports:
             - containerPort: 80
