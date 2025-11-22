@@ -1,0 +1,17 @@
+# .NET
+bin/
+obj/
+
+# Pulumi
+.pulumi/
+
+# Node (når du lager frontend)
+node_modules/
+dist/
+build/
+
+# OS/IDE
+.vs/
+.idea/
+.vscode/
+.DS_Store
