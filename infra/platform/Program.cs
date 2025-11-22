@@ -37,7 +37,7 @@ return await Deployment.RunAsync(() =>
         Version = "7.7.5",
         RepositoryOpts = new RepositoryOptsArgs
         {
-            Repo = "https://argoproj.github.io/argo-heml"
+            Repo = "https://argoproj.github.io/argo-helm"
         },
         Namespace = "argocd",
     }, new CustomResourceOptions()
